@@ -1,0 +1,38 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 4 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: IterativeRecommender.py
+--------------------------------------------------------------------------------
+IterativeRecommender.py:56:25: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+IterativeRecommender.py:57:25: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+IterativeRecommender.py:59:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+IterativeRecommender.py:60:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'IterativeRecommender.py'
+ outputting to 'IterativeRecommender2.py'
+--------------------------------------------------------------------------------
+
+46:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+47:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+48:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+50:29: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+51:29: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+53:39: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+54:39: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+56:25: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+56:25: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+57:25: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+57:25: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+59:30: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+59:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+60:30: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+60:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+--------------------------------------------------------------------------------
+
